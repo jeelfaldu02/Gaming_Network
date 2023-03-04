@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Gaming_Network</string>
+    <string name="main_image">Main Image</string>
+    <string name="our_games">Our Games</string>
+    <string name="first">First</string>
+    <string name="textview2">TextView2</string>
+    <string name="textview4">TextView4</string>
+    <string name="leaderboards">Leaderboards</string>
+    <string-array name="Games">
+        <item>BGMI</item>
+        <item>Clash Royale</item>
+        <item>Fortnite</item>
+        <item>Call Of Duty Mobile</item>
+        <item>FreeFire</item>
+        <item>Valorant</item>
+    </string-array>
 </resources>
