@@ -6,6 +6,7 @@
     <string name="textview2">TextView2</string>
     <string name="textview4">TextView4</string>
     <string name="leaderboards">Leaderboards</string>
+    <string name="about_us">About Us</string>
     <string-array name="Games">
         <item>BGMI</item>
         <item>Clash Royale</item>
@@ -14,4 +15,5 @@
         <item>FreeFire</item>
         <item>Valorant</item>
     </string-array>
+    <string name="about_us_para">If you were a "super awesome" Gamer, what medium would you choose to show people how good you are, at what you do?\n\nBy playing tournaments, of course.\n\nAt GamingNetwork We Dream of a better world where We can play video games all day long without having Our sanity questioned. We are an eSports gaming company based out of Bangalore, India. We conduct eSports or Competitive Gaming Tournaments that are played on Mobile. We currently have an Online eSports Portal. Our Online eSports Portal was launched in Aug 2020 with an idea of bringing the tournaments experience online &amp; with a vision to reach out to every gamer in India. With a passion and a commitment to the best gaming experience, we at GamingNetwork, have strove to create a community for gamers.</string>
 </resources>

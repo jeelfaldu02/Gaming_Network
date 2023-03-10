@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black"
+        android:background="#1f1d29"
         tools:context=".MainActivity">
 
         <ImageView
@@ -39,9 +39,9 @@
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
+            android:background="#282535"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-
             app:layout_constraintTop_toBottomOf="@+id/textView">
 
             <LinearLayout
@@ -247,7 +247,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="75dp"
-            android:background="#A8D0E3"
+            android:background="#282535"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
@@ -256,53 +256,53 @@
             app:layout_constraintTop_toBottomOf="@+id/textView9">
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/aboutUs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:text="About Us"
-                android:textColor="@color/black"
+                android:text="@string/about_us"
+                android:textColor="@color/white"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/contact_us"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="Contact Us"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/policy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="Privacy Policy"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/terms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="Terms of Use"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/faq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:text="FAQ"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp" />
 
         </LinearLayout>
@@ -310,14 +310,13 @@
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:adjustViewBounds="true"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lin1"
-            app:srcCompat="@drawable/bgsocial"/>
+            app:srcCompat="@drawable/bgsocial" />
 
         <TextView
             android:id="@+id/textView15"
@@ -333,6 +332,64 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <LinearLayout
+            android:id="@+id/lin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lin1">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="39dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="13dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/facebook_logo" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/instagram_logo" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/twitch_logo" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/youtube_logo" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="15dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/twitter_logo" />
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
