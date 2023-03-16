@@ -3,11 +3,9 @@ package com.example.gaming_network
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gaming_network.databinding.ActivityMainBinding
@@ -15,7 +13,7 @@ import com.example.gaming_network.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
-    lateinit var mainBinding: ActivityMainBinding
+    private lateinit var mainBinding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,8 +24,6 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         setContentView(view)
 
         mainBinding.spinnerGame.onItemSelectedListener = this
-
-
 
         val arrayAdapter = ArrayAdapter.createFromResource(
             this,
@@ -43,7 +39,14 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             val intent = Intent(this@MainActivity, AboutUsActivity::class.java)
             startActivity(intent)
         }
-
+        mainBinding.privacyPolicy.setOnClickListener {
+            val intent = Intent(this@MainActivity, PrivacyPolicyActivity::class.java)
+            startActivity(intent)
+        }
+        mainBinding.contactUs.setOnClickListener {
+            val intent = Intent(this@MainActivity, ContactUsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onItemSelected(p0: AdapterView<*>?, view: View?, p2: Int, p3: Long) {
