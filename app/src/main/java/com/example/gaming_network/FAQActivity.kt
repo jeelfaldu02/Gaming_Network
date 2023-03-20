@@ -28,5 +28,17 @@ class FAQActivity : AppCompatActivity() {
                 but1ans.visibility = View.VISIBLE;
             }
         }
+
+        val but2 = faqBinding.faq2
+        val but2ans = faqBinding.faq2Ans
+
+        but2.setOnClickListener {
+            if (but2ans.visibility == View.VISIBLE) {
+                but2ans.visibility = View.GONE;
+            }
+            else {
+                but2ans.visibility = View.VISIBLE;
+            }
+        }
     }
 }
