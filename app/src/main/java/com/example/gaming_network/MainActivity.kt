@@ -47,6 +47,14 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             val intent = Intent(this@MainActivity, ContactUsActivity::class.java)
             startActivity(intent)
         }
+        mainBinding.terms.setOnClickListener {
+            val intent = Intent(this@MainActivity, TermsOfUseActivity::class.java)
+            startActivity(intent)
+        }
+        mainBinding.faq.setOnClickListener {
+            val intent = Intent(this@MainActivity, FAQActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onItemSelected(p0: AdapterView<*>?, view: View?, p2: Int, p3: Long) {
